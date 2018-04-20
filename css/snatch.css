@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+.game-snatchCannon,.game-all{font-family: 'Titillium Web', sans-serif;
+                             height:100%;background:url(../images/sna/bg.jpg) no-repeat center center fixed;background-size:cover;font-size:12px;color:#fff;line-height:1.5;}
+.game-all{background:none}
+.game-snatchCannon figure{margin:0;padding:0;}
+
+.game-snatchCannon .nameStyle{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.game-snatchCannon header{position:fixed;top:0;left:0;width:100%;z-index:9999;height:35px;padding:10px 0;border-bottom:1px solid #a08163;background:rgba(0,0,0,0.3);box-sizing: content-box;}
+.game-snatchCannon header .mainBtn{position:absolute;height:16px;left:20px;top:20px}
+.game-snatchCannon header .hisBtn{position:absolute;height:22px;right:20px;top:20px}
+.game-snatchCannon header h1{margin:auto;width:60%;height:100%;text-align:center;font-size:12px;line-height:1;}
+.game-snatchCannon header h1 span{text-align:left;color:#ccc;display:inline-block;vertical-align:middle;margin-left:5px;}
+.game-snatchCannon header h1 img{}
+
+.game-snatchCannon header.mainHeader{background:#001025;z-index:99999;text-align:center;}
+.game-snatchCannon header.mainHeader aside{height:20px;}
+.game-snatchCannon header.mainHeader .btnClose{position:absolute;height:20px;left:15px;}
+
+/***************LightBox*******************************/
+.game-snatchCannon .lightbox,.game-texaxHoldem .lightbox2{position:fixed;left:0;top:0;width:100%;height:100%;z-index:99990;text-align:center;}
+.game-snatchCannon .lightbox:before,.game-texaxHoldem .lightbox2:before{content:"";height:100%;vertical-align:middle;display:inline-block;}
+.game-snatchCannon .lightbox:after,.game-texaxHoldem .lightbox2:after{position:absolute;left:0;top:0;content:"";height:100%;width:100%;background:rgba(0,0,0,.6);z-index:0;}
+.game-snatchCannon .lightbox-nobg:after{display:none;}
+
+.game-snatchCannon .lightbox article,.game-texaxHoldem .lightbox2 article{position: relative; vertical-align: middle;display:inline-block;text-align:center;z-index: 999;width:90%;max-width:330px;}
+.game-snatchCannon .lightbox article>div,.game-texaxHoldem .lightbox2 article>div{border:1px solid #ffcc99;padding:20px 10px;background:#001025;}
+.game-snatchCannon .lightbox article>button,.game-texaxHoldem .lightbox2 article>button{border:1px solid #ffcc99;padding:0;background:#001025;width:100%;margin:10px 0;font-size:18px;cursor:pointer}
+.game-snatchCannon .lightbox article>button img{vertical-align:bottom}
+
+.game-snatchCannon .lightbox article hr{border-color:#ffcc99;margin:10px auto}
+.game-snatchCannon .lightbox article .btnColose{position:absolute;right:0;top:-40px;}
+
+.game-snatchCannon .lightbox article h2{font-size:30px;}
+.game-snatchCannon .lightbox article dl {margin-bottom:5px;font-size:14px;}
+.game-snatchCannon .lightbox article dl dt{text-align:left;width:70%;font-weight:normal;}
+.game-snatchCannon .lightbox article dl dd .manIcon{width:35px;height:35px;}
+.game-snatchCannon .lightbox article dl dd .ico,.game-snatchCannon .ico{height:12px;margin-right:5px;}
+.game-snatchCannon .lightbox article dl dd .card{height:25px;width:auto;}
+.game-snatchCannon .lightbox article dl dd {text-align:right;}
+.game-snatchCannon .lightbox article dl dd.coins {width:70px;text-align:left;}
+
+.game-snatchCannon .lightbox article.gifArticle{width:100%;max-width:none;position:absolute;bottom:40px;left:0;}
+.game-snatchCannon .lightbox article.gifArticle>div{height:100%;border:none;border-top:1px solid #ffcc99;}
+.game-snatchCannon .lightbox article.gifArticle h6{text-align:left;text-transform:uppercase;color:#ffc873;margin:0;}
+
+.game-snatchCannon .lightbox article.gifArticle .giftPhotos{margin-top:10px;}
+.game-snatchCannon .lightbox article.gifArticle .giftPhotos li {float:left;margin:1% .5%;
+                    background:no-repeat center center;background-size:cover;
+					}
+
+.game-snatchCannon .lightbox article.gifArticle .giftPhotos.list-33 li{width:32%;padding-bottom:20%;}
+.game-snatchCannon .lightbox article.gifArticle .giftPhotos.list-42 li{width:24%;padding-bottom:18%;}					
+
+.game-snatchCannon .scoreCardZone dl{font-size:12px !important;}
+.game-snatchCannon .scoreCardZone dl dd.manIco{width:50px;}
+.game-snatchCannon .scoreCardZone dl dd.cardArea{width:50px;text-align:left;}
+.game-snatchCannon .scoreCardZone dl dd.name{max-width: 60px;width:60px;text-align:left;}
+.game-snatchCannon .scoreCardZone dl dd.result{width:90px;text-align:center;}
+.game-snatchCannon .scoreCardZone dl dd.coins {width:auto;}
+.game-snatchCannon .scoreCardZone dl dd.coins h6{margin:0}
+.game-snatchCannon .scoreCardZone dl dd.coins img{height:12px;}
+.game-snatchCannon .scoreCardZone hr{border-color:#bc8a58;margin:10px auto}
+
+/*rightZone*/
+.game-snatchCannon .rightArea .scoreCardZone{padding:10px;height: calc(100% - 120px);overflow:auto;}
+.game-snatchCannon .rightArea .scoreCardZone dl dd.manIco{width:40px;}
+.game-snatchCannon .rightArea .scoreCardZone .manIcon{width:30px;height:30px;}
+.game-snatchCannon .rightArea .scoreCardZone>h5{background:#5E5E5E;font-size:12px;padding:5px;margin-bottom:15px;}
+.game-snatchCannon .rightArea .scoreCardZone>h5 b{float:right;}
+
+
+.game-snatchCannon .lightbox article figure{display:block;}
+.game-snatchCannon .lightbox article figure.manList{overflow:auto;height:270px;}
+.game-snatchCannon .lightbox article figure.manList dl{margin-bottom:0;}
+
+.game-snatchCannon .mainBonus img{height:1em;margin-right:10px;}
+
+.game-snatchCannon .coinsScrollBar {margin:30px auto 0;width:90%;position:relative;}
+.game-snatchCannon .coinsScrollBar aside{background-image:url(../images/sna/Rectangle.png);padding-bottom:5.6%;}
+.game-snatchCannon .coinsScrollBar .controller{height:120%;position:absolute;left:0;bottom:-8px;z-index:99;}
+.game-snatchCannon .coinsScrollBar h4{background-image:url(../images/sna/icon_redShap.png);text-align:center;position:absolute;
+    width: 60px;
+    line-height: 28px;
+    font-size: 15px;
+    bottom: 20px;
+    left: -20px;
+}
+
+.game-snatchCannon .triple{width:80%;margin:auto;}
+.game-snatchCannon .result{width:80%;margin:10px auto;position:relative;}
+.game-snatchCannon .result .manIcon{position:relative;z-index:99}
+.game-snatchCannon .result.enemy{opacity:.9;
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	}
+	
+.game-snatchCannon .snap-cards{position:relative;z-index:0;background:url(../images/sna/card2.png) no-repeat;background-size:cover;padding-bottom:51%;}
+.game-snatchCannon .snap-cards figure{width:100%;height:60%;top:18%;text-align:center;position:absolute;}
+.game-snatchCannon .snap-cards figure img{max-height:100%;margin:0 5%;}
+
+.game-snatchCannon .addCoins{position:absolute;background-image:url(../images/sna/icon_yellowShap.png);width:100px;height:28px;top:0;right:-15px;color:#000;}
+.game-snatchCannon .addCoins img{vertical-align:bottom;height:20px;}
+
+.game-snatchCannon .buyGGniu dt{width:20%;vertical-align:top;}
+.game-snatchCannon .buyGGniu dd{text-align:left;padding-left:15px;vertical-align:top;}
+.game-snatchCannon .buyGGniu dd h5{border:1px solid #e2af7d;background:#000000;color:#e2af7d;padding:2px 5px;width:100px;text-align:center;margin:5px 0 20px}
+.game-snatchCannon .buyGGniu dd ul{font-size:18px;}
+.game-snatchCannon .buyGGniu dd ul small{font-size:12px;}
+
+.game-snatchCannon .ico2{height:18px;margin-right:5px;}
+
+/*bottom function********************************/
+
+.game-snatchCannon .me {width:70px;position:fixed;bottom:50px;left:15px;}
+.game-snatchCannon .me .game-snatchCannon .manIcon{width:90%;margin-bottom:5px;position:relative;}
+.game-snatchCannon .me .name{text-align:center;color:#dfad7a;display:block;}
+.game-snatchCannon .me h5{color:#fff;text-align:center;background:#202123;font-size:12px;}
+.game-snatchCannon .me .coins {position:absolute;top:10px;left:100%;width:100%;}
+.game-snatchCannon .me .coins img{max-height:15px;}
+
+.game-snatchCannon .btns{width:50%;position:fixed;bottom:9%;left:25%;text-align:center;}
+.game-snatchCannon button{
+    line-height: 1.5 !important;
+    color: #000 !important;
+}
+
+.game-snatchCannon .btns .pushBar{
+	position:absolute;
+	right: 23px;
+    bottom: 35px;
+    width: 5px;
+    height: 300px;
+    background: url(../images/sna/bar.png);
+    background-size: contain;
+    z-index: 0;
+}
+
+.game-snatchCannon .btns .pushBar aside{
+	height:100%;
+	width:100%;
+	bottom:0;
+	position:absolute;
+	z-index:0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcc99+0,a9723b+100 */
+	background: rgb(255,204,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,204,153,1) 0%, rgba(169,114,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,204,153,1) 0%,rgba(169,114,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,204,153,1) 0%,rgba(169,114,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc99', endColorstr='#a9723b',GradientType=0 ); /* IE6-9 */
+}
+
+.game-snatchCannon .btns .pushBar span{
+	position:absolute;
+	z-index:10;
+	width:60px;
+	left:-30px;
+	font-size:15px;
+	font-weight:bold;
+	border-radius:5px;
+	line-height:2;
+	display:block;
+	}
+
+.game-snatchCannon .btns .pushBar .pushBarNow{
+	color:#000;
+	background: rgb(255,204,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,204,153,1) 0%, rgba(169,114,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,204,153,1) 0%,rgba(169,114,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,204,153,1) 0%,rgba(169,114,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc99', endColorstr='#a9723b',GradientType=0 ); /* IE6-9 */
+	}
+	
+.game-snatchCannon .btns .pushBar .pushBarEnd{
+	color:#fff;
+	background: #2d3037; /* Old browsers */
+	border:2px solid #ffcc99;
+	top:-30px;
+	box-shadow: inset 0 0 6px 3px rgba(255, 255, 255, 0.23);
+	}
+
+
+.game-snatchCannon .message{position:fixed;width:100%;left:0;bottom:0;background:#08121d;z-index:999;}
+.game-snatchCannon .message.active{z-indeX:99999;}
+.game-snatchCannon .message dt{width:20%;text-align:center;padding:7px 0}
+.game-snatchCannon .message dt img{height:20px;}
+.game-snatchCannon .message dd input{background:#12202f;font-size:15px;font-style:italic;text-align:left;padding:3px 15px;margin:5px 0;}
+
+.game-snatchCannon .message.active img{
+  box-shadow: 0 0 12px 2px rgb(215, 160, 114);
+}
+
+.game-snatchCannon .otherBtn{position:fixed;right:15px;bottom:50px;width:30px;}
+.game-snatchCannon .btn_time{background-image:url(../images/sna/icon_time.png);color:#bd270e;width:28px;line-height:30px;display:block;text-align:center;margin-bottom:5px;}
+.game-snatchCannon .btn_circle{background-image:url(../images/sna/icon_circle.png);padding-bottom:86.1%;display:block;}
+
+/*left right function*******************************
+.leftArea,.leftArea2{width:75%;height:100%;background:rgba(0,12,27,0.95);color:#e1e1e1;z-index:9999;position:absolute;top:0;overflow:auto;}
+.leftArea{left:0;border-right:1px solid #bc8a58;}
+.leftArea2{ right:0;border-left:1px solid #bc8a58;}
+.leftArea2 .mainNav2{ position:fixed; z-index:9999; bottom:0;border-top:1px solid #bc8a58;background:rgba(0,12,27,0.95); width:100%; padding-bottom:10px}
+
+.rightArea{width:85%;}
+
+.leftArea .mainNav li,.leftArea2 .mainNav li{border-bottom:1px solid #bc8a58}
+.leftArea .mainNav li a,.leftArea2 .mainNav li a{color:#e1e1e1;padding:8px 15px;display:block;}
+.leftArea .mainNav li a>img,.leftArea2 .mainNav li a>img{max-width:1.5em;max-height:1.5em;margin-right:.5em;}
+*/
+
+
+
+/*main function********************************/
+
+.game-snatchCannon .wp{padding-top:56px;}
+.game-snatchCannon .blueBg{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001839+0,080d15+100 */
+	background: rgb(0,24,57); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,24,57,1) 0%, rgba(8,13,21,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,24,57,1) 0%,rgba(8,13,21,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,24,57,1) 0%,rgba(8,13,21,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001839', endColorstr='#080d15',GradientType=0 ); /* IE6-9 */
+	}
+	
+	
+/*tabs*/
+.game-snatchCannon .tabs {margin-bottom:-11px;position:relative;z-index:9999;}
+.game-snatchCannon .tabs li{width:50%;font-size:15px;text-align:center;padding:8px 0;border-left:1px solid #a08163;text-transform:uppercase;background:#171717;color:#929292;}	
+.game-snatchCannon .tabs li a{color:#fff;}
+.game-snatchCannon .tabs li.active a{color:#ffba74;}
+.game-snatchCannon .tabs li.active{background:#02152e;border-bottom:1px solid #02152e}
+.game-snatchCannon .tabs li.active img{ filter: grayscale(0%);}
+.game-snatchCannon .tabs li img{height:18px;margin-right:10px; filter: grayscale(100%);}
+
+
+/*chatBox*/
+.game-snatchCannon .chatBg{padding-bottom:93%;background-image:url(../images/sna/ChatBoxBg.png);border-top:1px solid #a08163;margin-top:10px;position:relative;}
+
+.game-snatchCannon .chatList,.game-snatchCannon .coinList,.game-snatchCannon .betSummary{padding:10px 5%;position:absolute;left:0;top:0;width:100%;height:85%;overflow:auto;box-sizing:border-box;}
+.game-snatchCannon .chatList li{float:left;background:#010408;padding:3px 5px;margin-bottom:5px;min-width: 51%;}
+
+.game-snatchCannon .chatList li dt{float:left;margin:0 5px}
+.game-snatchCannon .chatList li dt img{width:25px;border-radius:50%;border:1px solid #bc8a58}
+.game-snatchCannon .chatList li dd {line-height:25px;float:left;margin-left:5px;}
+.game-snatchCannon .chatList li dd img{max-height:70px;}
+.game-snatchCannon .chatList li dd b{vertical-align:top;color:#d3a372;}
+.game-snatchCannon .chatList li dd span{vertical-align:top;}
+
+.game-snatchCannon .chatList li.mychat{float:right;}
+.game-snatchCannon .chatList li.mychat dt{float:right;}
+.game-snatchCannon .chatList li.mychat dd {float:right;text-align:right;}
+.game-snatchCannon .chatList li.mychat dd b{vertical-align:top;}
+
+/*coinList*/
+.game-snatchCannon .coinList li {width:50%;float:left;margin:5px 0;display:table;}
+.game-snatchCannon .coinList li dt{padding:0;display:table-cell;}
+.game-snatchCannon .coinList li dt img{width:30px;border-radius:50%;border:1px solid #bc8a58}
+
+.game-snatchCannon .coinList li dd {padding-left:5px;display:table-cell;}
+.game-snatchCannon .coinList li dd div{display:inline-block;font-size:12px;width:60px;text-align:center;vertical-align:middle}
+.game-snatchCannon .coinList li dd div h6{margin:2px 0;text-overflow: ellipsis;overflow:hidden;white-space:nowrap;}
+.game-snatchCannon .coinList li dd div p.points{background:#101417;text-align:center;margin:0;}
+
+.game-snatchCannon .coinList li dd span{display:inline-block;vertical-align:middle}
+.game-snatchCannon .coinList li dd span img{/*max-height:15px;*/margin:0 2px}
+
+/*betSummary*/
+.game-snatchCannon .betSummary{text-align:center;padding:10px 20%;top:40px;}
+.game-snatchCannon .betSummary hr{border-color:#8c7669}
+.game-snatchCannon .betSummary>h1{color:#ffcc99;font-size:200%;}
+
+.game-snatchCannon .betSummary .game-snatchCannon figure{margin-top:15px;}
+.game-snatchCannon .betSummary dl{margin-bottom:3px;}
+.game-snatchCannon .betSummary dt{text-align:left;width:150px;}
+.game-snatchCannon .betSummary dd{text-align:right;}
+.game-snatchCannon .betSummary dd img{max-height:15px;margin-right:5px;}
+
+
+/*頭像*/	
+.game-snatchCannon .manIcon{/*width:60%;*/margin:5px auto;position:relative;}
+.game-snatchCannon .manIcon img{border-radius:50%;position:relative;z-index:0;}
+.game-snatchCannon .manIcon span{position:absolute;z-index:999;bottom:3px;text-align:center;color:#fff;width:100%;}
+.game-snatchCannon .manIcon:before{width:106%;height:106%;position:absolute;z-index:90;left:-3%;top:-3%;background:url(../images/sna/manborder.png) no-repeat center center;
+                background-size:cover;content:"";}
+
+/*info*/
+.game-snatchCannon .info {border-bottom:1px solid #a08163;position:relative;padding: 10px 0;}
+/*.game-snatchCannon .info:before{background:url(../img/icon_arrow.png) no-repeat center center;background-size:cover;height:9px;content:"";
+ width:30px;position:absolute;bottom:-9px;left:calc(50% - 15px);}*/
+.game-snatchCannon .info dl>dt{width:45%;color:#ffcc99;font-size:13px;padding:0 15px;/*border-left:1px solid #a08163;border-right:1px solid #a08163*/}
+.game-snatchCannon .info dl>dt img{height:15px;margin-right:10px;}
+.game-snatchCannon .info dl>dt h6{margin:5px 0;color:#fff;}
+
+.game-snatchCannon .info dd{height:100%;}
+.game-snatchCannon .info dd .manList {border-bottom:1px solid #a08163;padding:15px 10px;}
+.game-snatchCannon .info dd .coinsList {padding:10px;}
+.game-snatchCannon .info dd .manList img{height:15px;margin-right:3px;}
+.game-snatchCannon .info dd .coinsList img{height:15px;margin-right:3px;}
+
+.game-snatchCannon .info dd.infoIcon{padding:0 10px;}
+
+.game-snatchCannon .info dd.mainInfo{text-align:center;vertical-align:middle;color:#ffcc99;}
+.game-snatchCannon .info dd.mainInfo .rank{margin:0;padding:0;width:90px;overflow:hidden;text-overflow: ellipsis;padding-left:18px;position:relative;}
+.game-snatchCannon .info dd.mainInfo .rank:before,.game-snatchCannon .mainInfo .rank:before{background:url(../images/sna/rank.png) no-repeat center center;background-size:contain;
+                                                    width:15px;height:15px;content:"";position:absolute;left:0;}
+.game-snatchCannon .info dd.mainInfo h5,.game-snatchCannon .mainInfo .coins{color:#fff;padding:2px 5px;background:#1e2228;display:inline-block;}
+
+.game-snatchCannon .info dd.mainInfo .round{display:table;width:100%;color:#fff;border:1px solid #a08163;margin-top:5px}
+.game-snatchCannon .info dd.mainInfo .round dt{border-right:1px solid #a08163;color:#fff;width:auto;font-size:12px;font-weight:normal;}
+
+.game-snatchCannon .info dd.game-snatchCannon .infoIcon {width:20%;}
+.game-snatchCannon .info dd.game-snatchCannon .infoIcon .game-snatchCannon .manIcon:before{background-image:url(../images/sna/manborder.png);}
+
+.game-snatchCannon .finalinfo dt date{color:#ac0610;}
+
+.game-snatchCannon .mainCoins{position:fixed;left:calc(50% - 30px);padding:2px 10px;background:#000;bottom:18.5%}
+.game-snatchCannon .mainCoins img{height:15px;margin-right:5px;}
+
+.game-snatchCannon .mainCard{position:fixed;left:calc(50% - 90px);bottom:50px;width:180px;}
+.game-snatchCannon .mainCard img{}
+
+/*iphone5*/
+@media (max-width: 370px) {
+/*	
+.game-snatchCannon .info dt{width:45%;}
+.game-snatchCannon .info dd{width:27.5%;}
+*/
+.game-snatchCannon .info dd.mainInfo .rank{width:70px;}
+.game-snatchCannon .lightbox article{width:95%;}
+.game-snatchCannon .info dd.mainInfo aside{width:70%;}
+.game-snatchCannon .me {width:70px;}
+
+.game-snatchCannon .chatBg{padding-bottom:86%;}
+.game-snatchCannon .chatList,.game-snatchCannon .coinList{padding:10px 2%;}
+
+.game-snatchCannon .chatList li dt {margin:0 2px;}
+.game-snatchCannon .chatList li dd div{width:45px;}
+
+.game-snatchCannon .coinList li dd div{width:50px;}
+
+.game-snatchCannon .btns{width:60%;}
+
+.game-snatchCannon .info dd.infoIcon{padding: 0 5px;width:auto;}
+
+
+}
+

@@ -1,0 +1,114 @@
+body {
+  overflow:hidden;
+  ::-webkit-scrollbar { display: none; }
+  background-color: rgb(44, 53, 57);
+  /*.disable-selection*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.card-time {
+  font-family:'cooper-black-std', serif;
+  color:yellow;
+  font-size:64px;
+}
+
+a img.cr-image,img.cr-image{transition:none}
+
+.uploadFile .uploadImg{position:relative;transition:all .7s;width:80%;margin:0 auto 10px;}
+.uploadFile .uploadImg div {
+  height: 0;
+  padding-bottom: 100%;
+  opacity: 0;
+  border: 1px solid #333;
+  position:relative;
+  z-index:10;
+}
+.uploadFile .uploadImg:after{content:"";position:absolute;width:100%;height:100%;border: 1px solid #4b433c;left:0;top:0;z-index:0;background:rgba(0,0,0,0.3);box-sizing:border-box;border-radius:50%;}
+.uploadFile .uploadImg:hover:after{background:rgba(0,0,0,0.6);}
+
+.dlgWait {
+  z-index:804;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.upload-demo .upload-demo-wrap,
+.upload-demo .upload-result,
+.upload-demo.ready .upload-msg {
+    display: none;
+}
+.upload-demo.ready .upload-demo-wrap {
+    display: block;
+}
+.upload-demo.ready .upload-result {
+    display: inline-block;
+}
+.upload-demo-wrap {
+    height: 300px;
+    margin: 0 auto;
+}
+
+.upload-msg {
+    text-align: center;
+    padding: 50px;
+    font-size: 22px;
+    color: #aaa;
+    width: 260px;
+    margin: 50px auto;
+    border: 1px solid #aaa;
+}
+
+.disableLayer
+{
+  /* Do not display it on entry */
+  display: block;
+  z-index:700;
+  /* make it cover the whole screen */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  /* make it white but fully transparent */
+  background-color: black;
+  opacity:.3;
+  filter: alpha(opacity=3);
+}
+
+.animated {
+  animation-duration: .5s;
+}
+
+.animated.hinge {
+  animation-duration: 1s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .35s;
+}
+
+.upper {
+  text-transform:uppercase;
+}
+
+.lower {
+  text-transform:lowercase;
+}
+
+.capitalize {
+  text-transform:capitalize;
+}
+
+.upper-first:first-letter {
+  text-transform: uppercase;
+}

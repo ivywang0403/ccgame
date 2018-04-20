@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+.card {
+  width: 23px;
+  background: url(../images/poker-s.png) no-repeat;
+  background-size:780%;
+	display:inline-block;
+	margin:auto;
+}
+.card-mid{width: 35px;}
+.card:before{content:"";padding-bottom:133%;width:100%;display:block;}
+
+.cd2 { background-position: 0.5% 0%; }
+.cd3 { background-position: 14.6% 0%; }
+.cd4 { background-position: 28.7% 0%; }
+.cd5 { background-position: 42.8% 0%; }sdfghjkl
+.cd6 { background-position: 56.9% 0%; }
+.cd7 { background-position: 71.1% 0%; }
+.cd8 { background-position: 85.3% 0%; }
+.cd9 { background-position: 99.5% 0%; }
+.cd10 { background-position: 0.5% 16.6%; }
+.cd11 { background-position: 28.7% 16.6%; }
+.cd12 { background-position: 56.9% 16.6%; }
+.cd13 { background-position: 42.8% 16.6%; }
+.cd1 { background-position: 14.6% 16.6%; }
+
+.cd202 { background-position: 71.1% 16.6%; }
+.cd203 { background-position: 85.3% 16.6%; }
+.cd204 { background-position: 99.5% 16.6%; }
+.cd205 { background-position: 0.5% 33.2%; }
+.cd206 { background-position: 14.6% 33.2%; }
+.cd207 { background-position: 28.7% 33.2%; }
+.cd208 { background-position: 42.8% 33.2%; }
+.cd209 { background-position: 56.9% 33.2%; }
+.cd210 { background-position: 71.1% 33.2%; }
+.cd211 { background-position: 99.5% 33.2%; }
+.cd212 { background-position: 14.6% 49.8%; }
+.cd213 { background-position: 0.5% 49.8%; }
+.cd201 { background-position: 85.3% 33.2%; }
+
+.cd302 { background-position: 28.7% 49.8%; }
+.cd303 { background-position: 42.8% 49.8%; }
+.cd304 { background-position: 56.9% 49.8%; }
+.cd305 { background-position: 71.1% 49.8%; }
+.cd306 { background-position: 85.3% 49.8%; }
+.cd307 { background-position: 99.5% 49.8%; }
+.cd308 { background-position: 0.5% 66.4%; }
+.cd309 { background-position: 14.6% 66.4%; }
+.cd310 { background-position: 28.7% 66.4%; }
+.cd312 { background-position: 85.3% 66.4%; }
+.cd311 { background-position: 56.9% 66.4%; }
+.cd313 { background-position: 71.1% 66.4%; }
+.cd301 { background-position: 42.8% 66.4%; }
+
+.cd102 { background-position: 99.5% 66.4%; }
+.cd103 { background-position: 0.5% 83%; }
+.cd104 { background-position: 14.6% 83%; }
+.cd105 { background-position: 28.7% 83%; }
+.cd106 { background-position: 42.8% 83%; }
+.cd107 { background-position: 56.9% 83%; }
+.cd108 { background-position: 71.1% 83%; }
+.cd109 { background-position: 85.3% 83%; }
+.cd110 { background-position: 99.5% 83%; }
+.cd111 { background-position: 14.6% 100%; }
+.cd112 { background-position: 42.8% 100%; }
+.cd113 { background-position: 28.7% 100%; }
+.cd101 { background-position: 0.5% 100%; }
+
+.cd401 { background-position: 56.9% 100%; }
+.cd402 { background-position: 71.1% 100%; }
+.cd403 { background-position: 85.3% 100%; }
+
+.darkCard{opacity:.5}
+
+/*iphone5*/
+@media (max-width: 370px) {
+.card-mid{width: 30px;}
+}

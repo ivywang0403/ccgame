@@ -1,0 +1,2677 @@
+button{
+    border: none;
+}
+
+/* A links */
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #FFF;
+}
+    
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 109;
+    left: 0;
+    top: 0;
+    transition: all .3s linear;
+}
+
+.overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 121;
+    left: 0;
+    top: 0;
+    transition: all .3s linear;
+}
+
+.hidden{
+  display: none;
+}
+
+.visuallyhidden{
+  opacity: 0;
+}
+
+/* MAIN CONTAINER CSS */
+.cc-ggniu-main-container{
+    position: fixed;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    overflow: hidden;
+}
+
+.cc-ggniu-background{
+    position: fixed;
+    top: 0;
+    left:0;
+    background: url('../images/subtle_zebra.jpg') repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.cc-ggniu-background .table-details{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50px;
+    text-align: center;
+}
+
+.cc-ggniu-background .table-details .details-content img{
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+
+.cc-ggniu-background .table-details .details-content h6{
+    width: 200px;
+    font-size: 9px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0.4;
+}  
+
+/* All Pages CSS */
+.cc-ggniu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 0;
+    background: transparent;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}  
+
+.cc-ggniu-fixed{
+    z-index: 120;
+    position: fixed;
+}
+
+.cc-ggn-top-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    background-color: #333;
+}
+
+.cc-ggn-top-fixed .top-bar{
+    height: 50px;
+    width: 100%;
+    display: table;
+    position: relative;
+    background-color: #333;
+}
+
+.top-bar-hamburger{
+    display: table-cell;
+    width: 25%;
+}
+
+.top-bar-hamburger .hamburger-content{
+    position: relative;
+    width: 100%;
+    height: 100%;    
+}
+
+.top-bar-hamburger .hamburger-content img.hamburger-icon{
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    left: 10px;
+    width: 24px;
+    height: 24px;   
+}
+
+.top-bar-details{
+    display: table-cell;
+    width: 50%;
+}
+
+.top-bar-details .details-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top-bar-details .details-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top-bar-details .details-content img.logo-icon{
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    left: 5px;
+    width: 50px;
+    height: 37px;
+}
+
+.top-bar-details .details-content h6{
+    position: absolute;
+    display: inline-block;
+    font-size: 8px;
+    color: #ddd;
+    font-weight: 600;
+}
+
+.top-bar-details .details-content h6.stake-text{
+    left: 60px;
+    top: 0px;
+}
+
+.top-bar-details .details-content h6.room-hand-text{
+    left: 60px;
+    top: 12px;
+}
+
+.top-bar-details .details-content h6.date-text{
+    left: 60px;
+    top: 24px;
+}
+
+.cc-ggn-top-fixed .top-bar .top-bar-right-btns{
+    display: table-cell;
+    width: 25%;
+}
+
+.cc-ggn-top-fixed .top-bar .top-bar-right-btns .right-btns-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cc-ggn-top-fixed .top-bar .top-bar-right-btns .right-btns-content img.history-icon{
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.cc-ggn-top-fixed .top-bar .top-bar-right-btns .right-btns-content img.live-icon{
+    position: absolute;
+    display: inline-block;
+    top: 14px;
+    right: 50px;
+    width: 24px;
+    height: 24px;
+}
+
+.cc-ggn-top-fixed .top-bar-timer{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 5px;
+}
+
+.cc-ggn-top-fixed .top-bar-timer .timer-container{
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.cc-ggn-top-fixed .top-bar-timer .timer-container img{
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    margin-top: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .cc-ggn-top-fixed .top-bar-timer .timer-container img{
+        margin-top: 5px !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .cc-ggn-top-fixed .top-bar-timer .timer-container img{
+        margin-top: -20px !important;
+    }
+}
+   
+
+.cc-ggn-top-fixed .top-bar-timer .timer-container h4{
+    position: absolute;
+    display: inline-block;
+    margin-top: 46px;
+    width: 30%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    font-weight: 600;
+    text-align:center;
+}
+
+/* GGN GAME BOTTOM FIXED */
+.cc-ggn-bottom-fixed{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 38px;
+    z-index: 103;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar{
+    height: 38px;
+    width: 100%;
+    display: table;
+    position: relative;
+    background-color: #333;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-chat{
+    width: 80%;
+    height: 38px;
+    position: relative;
+    display: table-cell;
+    padding: 5px 6px;
+    vertical-align: top;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-chat input{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3px 10px;
+    vertical-align: top;
+    border-radius: 10px;
+    background-color: #ddd;
+    font-size: 13px;
+    line-height: 20px;
+    color: #111;
+    border: 1px solid #999;
+    -webkit-appearance: none;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-gif{
+    display: table-cell;
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    color: white;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-gif .bottom-gif{
+    position: relative;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-gif .bottom-gif a{
+    cursor: pointer;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-gif .bottom-gif h4{
+    position: absolute;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 3px 3px 2px 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    top:-1px;
+    left:8px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-gif .bottom-gif h4.open{
+    border: 1px solid #ffd26c;
+    background: -webkit-linear-gradient(top,#ffd26c 0, #fcbd2d 50%, #ffd26c 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-minimize{
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    display: table-cell;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-minimize .minimize-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar .bottom-bar-minimize .minimize-container img{
+    position: absolute;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin: 0 auto;
+    top: 8px;
+    right: 10px;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs{
+    display: table;
+    width: 98%;
+    margin: auto;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs div{
+    display: table-cell;
+    width: 30%;
+    height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    position: relative;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs div.nth-tab{
+    display: table-cell;
+    width: 40%;
+}
+
+.scratch-card-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 102;
+}
+
+.scratch-card-content a{
+    cursor: pointer;
+}
+
+.scratch-card-content .scratch_container {
+    position: fixed;
+    display: inline-block;
+    width: 50%;
+    height: 80px;
+    -ms-transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+    margin: auto;
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    -o-transition:all .3s;
+    transition:all .3s;
+}
+
+.scratch-card-content .scratch_viewport{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    z-index: 0;
+    width: 100%;
+    background: url("../images/ggn-scratch-card.png") no-repeat;
+    background-size: contain;
+}
+
+.scratch-card-content .scratch_picture-under{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    display: block;
+    z-index: -1;
+}
+
+.scratch-card-content .scratch_viewport img,
+.scratch-card-content .scratch_viewport canvas{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.scratch-card-content.popup .scratch_container{
+    width: 95%;
+    -ms-transform: rotate(10deg) scale(0.6);
+    -webkit-transform: rotate(10deg) scale(0.6);
+    transform: rotate(10deg) scale(0.6);
+    position: fixed;
+    display: inline-block;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: -50px auto 0 auto;
+    -moz-transition:all .2s ease-out;
+    -webkit-transition:all .2s ease-out;
+    -o-transition:all .2s ease-out;
+    transition:all .2s ease-out;
+}
+
+.scratch-card-content.popup2 .scratch_container{
+    -ms-transform: rotate(-5deg) scale(1.5);
+    -webkit-transform: rotate(-5deg) scale(1.5);
+    transform: rotate(-5deg) scale(1.5);
+    -moz-transition:all .2s ease-in-out;
+    -webkit-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+}
+
+.scratch-card-content.popup3 .scratch_container{
+    -ms-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    -moz-transition:all .1s ease-in;
+    -webkit-transition:all .1s ease-in;
+    -o-transition:all .1s ease-in;
+    transition:all .1s ease-in;
+}
+
+.scratch-card-content button.scratch-card-reveal{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    bottom: 38%;
+    opacity: 0.9;
+    padding: 0;
+    background: -webkit-linear-gradient(top, #525252 0, #1D1D1D 100%);
+    color: #FFCC00;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media(max-width: 320px){
+    .scratch-card-content button.scratch-card-reveal{
+        bottom: 40%;
+    }
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs div img{
+    width: 95%;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right:0; 
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs div h4{
+    position: absolute;
+    display: inline-block;
+    top: -1px;
+    left: 0;
+    right:0; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px #999;
+    color: #333;
+}
+
+.cc-ggn-bottom-fixed .bottom-bar-menu .menu-bar-tabs div.bet-tab h4{
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px #fff;
+    color: #111;
+}
+
+
+/* CREDITS CSS */
+.cc-ggniu-container .cc-credits{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.cc-ggniu-container .cc-credits{
+    font-size: 10px;
+    color: #c6c6c6;
+}
+
+/* GGN GAME PAGE CSS */
+.cc-ggn-game-container{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.cc-ggn-chat-area{
+    width: 97%;
+    margin: auto;
+    padding-top: 10px;
+    height: 100%;
+}
+
+.cc-ggn-chat-area ul.chatslist{
+    width: 100%;
+    padding: 0;
+    padding-top: 40px;
+}
+
+.cc-ggn-chat-area ul.chatslist li{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container{
+    width: 100%;
+    display: table;
+    text-align: left;
+    margin-top: -7px;
+}
+
+.cc-ggn-chat-area ul.chatslist li.left div.chat-container{
+    width: 100%;
+    display: table;
+    text-align: left;
+    margin-top: -12px;
+}
+
+.cc-ggn-chat-area ul.chatslist li.right div.chat-container{
+    width: 100%;
+    display: table;
+    text-align: right;
+}
+
+.cc-ggn-chat-area ul.chatslist li.middle div.chat-container{
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container .chat-img{
+    width: 10%;
+    display: table-cell;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container .chat-img img{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0px;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box{
+    width: 90%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box h6{
+    color: #3e3e3e;
+    font-size: 11px;
+    font-weight: 900;
+    margin: 5px 0px;
+}
+
+.cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box.giphy img{
+    min-height: 100px;
+    max-height: 180px;
+    border-radius: 10px;
+}
+
+@media (max-width: 414px){
+    .cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box.giphy img{
+        min-height: 80px;
+        max-height: 150px;
+    }
+}
+
+@media (min-width: 768px){
+    .cc-ggn-chat-area ul.chatslist li div.chat-container .chat-img img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box{
+        width: 93%;
+    }
+
+    .cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box h6{
+        color: #3e3e3e;
+        font-size: 11px;
+        font-weight: 900;
+        margin: 5px 0px;
+    }
+
+    .cc-ggn-chat-area ul.chatslist li div.chat-container .chat-box.giphy img{
+        min-height: 150px;
+        max-height: 250px;
+    }
+}
+    
+
+.cc-ggn-game-container .talk-bubble {
+    display: inline-block;
+    position: relative;
+	max-width: 60%;
+	height: auto;
+	background: -webkit-linear-gradient(top, #f9f9f9 15%, #e8e8e8 100%);
+}
+
+.cc-ggn-chat-area ul.chatslist li.right .talk-bubble{
+    margin-top: 0px;
+    background: -webkit-linear-gradient(top, #65e1c3 15%, #5bccb0 100%);
+}
+
+.cc-ggn-chat-area ul.chatslist li.middle .talk-bubble{
+    max-width: 80%;
+    margin-top: 0px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    font-size: 11px;
+    padding: 0px 5px;
+}
+
+.cc-ggn-game-container .round{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/* Right triangle, left side slightly down */
+.cc-ggn-game-container .tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -8px;
+	right: auto;
+    top: 5px;
+	bottom: auto;
+	border: 6px solid;
+	border-color: #f9f9f9 #f9f9f9 transparent transparent;
+}
+
+.cc-ggn-game-container .left-time:before{
+	content: attr(data-before);
+	position: absolute;
+    color: #444;
+	width: 50px;
+	height: 0;
+    left: auto;
+	right: -54px;
+    bottom: 17px;
+    font-size: 10px;
+}
+
+.cc-ggn-game-container .tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -8px;
+    top: 5px;
+	bottom: auto;
+	border: 6px solid;
+	border-color: #65e1c3 transparent transparent #65e1c3;
+}
+
+.cc-ggn-game-container .right-time:before{
+	content: attr(data-before);
+	position: absolute;
+    color: #444;
+	width: 50px;
+	height: 0;
+    left: auto;
+	left: -54px;
+    bottom: 17px;
+    font-size: 10px;
+}
+
+@media (min-width: 768px){
+    .cc-ggn-game-container .left-time:before{
+        content: attr(data-before);
+        position: absolute;
+        color: #444;
+        width: 80px;
+        height: 0;
+        left: auto;
+        right: -90px;
+        bottom: 22px;
+        font-size: 10px;
+    }
+    .cc-ggn-game-container .right-time:before{
+        content: attr(data-before);
+        position: absolute;
+        color: #444;
+        width: 80px;
+        height: 0;
+        left: auto;
+        left: -90px;
+        bottom: 22px;
+        font-size: 18px;
+    }
+}
+
+/* TALK BUBBLE TEXT CONTENT */
+.cc-ggn-game-container .talktext{
+    padding: 6px 10px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext p{
+    font-size: 13px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px){
+    .cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext p{
+        font-size: 20px;
+    }
+}
+
+.cc-ggn-chat-area ul.chatslist li.middle .talk-bubble .talktext p{
+    text-align: center;
+}
+
+/* TALK BUBBLE BET CONTENT */
+.cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext.player-bubble-bet p{
+    color: #e1011a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext.player-bubble-bet.showhand p{
+    color: #0649a3;
+}
+
+.cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext.player-bubble-bet p span.chip-icon{
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 5px;
+    height: 18px;
+    width: 18px;
+}
+
+.cc-ggn-chat-area ul.chatslist li .talk-bubble .talktext.player-bubble-bet.showhand p span.chip-icon{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+
+/* START POPUP DIALOG */
+.modal{
+    top: inherit;
+    z-index: 110;
+}
+
+.modal.fade.in .lab-modal-body {
+    opacity: 1;
+    bottom: 0;
+}
+
+.lab-modal-body h1 {
+  font-size: 4rem;
+}
+
+.lab-modal-body p {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #666;
+}
+
+.lab-modal-body {
+  position: relative;
+  bottom: -250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 0px 0px 80px 0px;
+  max-width: 97%;
+  height: auto;
+  background-color: #e9e9e9;
+  border: 1px solid #BEBEBE;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+}
+
+.lab-modal-body .gif-container{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.lab-modal-body .gif-container .gif-header-row{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    border-bottom: 1px solid #999;
+    margin: 0;
+}
+
+.lab-modal-body .gif-container .gif-header-row h3{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    color: #222;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.lab-modal-body .gif-container .gif-content-row{
+    padding: 10px 10px 0 10px;
+}
+
+.lab-modal-body .gif-container .gif-row{
+    display: table;
+    width: 100%;
+}
+
+.lab-modal-body .gif-container .gif-row div{
+    display: table-cell;
+    width: 25%;
+    padding: 1px;
+}
+
+.lab-modal-body .gif-container .gif-row div img{
+    width: 100%;
+    border-radius: 5px;
+    height: 60px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px){
+    .lab-modal-body .gif-container .gif-row div img{
+        height: 120px;
+    }
+}
+
+.lab-modal-body .search-container{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lab-modal-body .pagination-btn-row{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lab-modal-body .pagination-btn-row button{
+    float: left;
+    width: 25%;
+    background: #ccc !important;
+    padding: 3px !important;
+    color: #222;
+    margin: 0 0 9px 0 !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+.lab-modal-body .search-container input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+/* INFO CONTAINER -> Player/ Banker/ Me */
+.lab-modal-body .info-container{
+    width: 100%;
+}
+
+.lab-modal-body ul.info-header-div{
+    width: 100%;
+    height: 30px;
+    list-style-type: none;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.lab-modal-body ul.info-header-div li.header-banker{
+    width: 50%;
+    float: left;
+    height: 30px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+}
+
+.lab-modal-body ul.info-header-div li.header-me{
+    width: 50%;
+    float: left;
+    height: 30px;
+    border-left: 1px solid #ddd;
+    background: -webkit-linear-gradient(top, #00dea8 0, #00c091 100%);
+}
+
+.lab-modal-body ul.info-header-div li h3{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    color: #222;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.lab-modal-body ul.info-top-div{
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    padding: 0px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.lab-modal-body li.banker-info-div{
+    width: 50%;
+    height: 70px;
+    float: left;
+}
+
+.lab-modal-body li.me-info-div{
+    width: 50%;
+    height: 70px;
+    float: left;
+    border-left: 1px solid #ddd;
+}
+
+.me-info-div .me-info-content,
+.banker-info-div .banker-info-content{
+    position: relative;
+}
+
+.me-info-content img,
+.banker-info-content img{
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    left: 10px;
+    top: 5px;
+}
+
+@media(max-width: 320px){
+    .me-info-content img,
+    .banker-info-content img{
+        height: 40px;
+        width: 40px;
+        left: 10px;
+        top: 15px;
+    }
+}
+
+.me-info-content h4,
+.banker-info-content h4{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+    padding: 2px 5px;
+    color: #111;
+}
+
+@media(max-width: 320px){
+    .me-info-content h4,
+    .banker-info-content h4{
+        width: 90px;
+        font-size: 12px;
+    }
+}
+.me-info-content h4.me-details-name,
+.banker-info-content h4.banker-name{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 5px auto 0px auto;
+    left: 75px;
+    top: 1px;
+    font-weight: 600;
+}
+
+.me-info-content h4.me-details-chips{
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    left: 75px;
+    top: 25px;    
+}
+
+.banker-info-content h4.banker-chips{
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 75px;
+    top: 25px;
+}
+
+.banker-info-content h4.round-count{
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 5px 5px;
+    left: 75px;
+    top: 44px;
+}
+
+@media(max-width: 320px){    
+    .me-info-content h4.me-details-name,
+    .banker-info-content h4.banker-name{
+        left: 55px;
+    }
+
+    .me-info-content h4.me-details-chips{
+        left: 55px;
+        top: 24px;    
+    }
+
+    .banker-info-content h4.banker-chips{
+        left: 55px;
+        top: 24px;
+    }
+
+    .banker-info-content h4.round-count{
+        left: 55px;
+        top: 42px;
+    }
+}
+
+.player-info-row{
+    display: inline-block;
+    width: 100%;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.player-info-row div.player-header-row{
+    height: 30px;
+    background: #ccc;
+    border-bottom: 1px solid #ddd;
+}
+
+.player-info-row div.player-header-row h3{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    color: #222;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.player-info-row ul.player-list{
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+
+.player-info-row ul.player-list li.player-item{
+    width: 50%;
+    float: left;
+    height: 50px;
+}
+
+.player-item-container{
+    position: relative;
+    width: 100%;
+}
+
+.player-item-container img{
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+    border-radius: 40px;
+}
+
+.player-item-container h4{
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 11px;
+    color: #333;
+    width: 70px;
+    text-align: center;
+    padding: 2px 3px;
+}
+
+.player-item-container h4.player-name{
+    color: #333;
+    font-weight: 600;
+    top: 0px;
+    left: 44px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.player-item-container h4.player-chips{
+    color: #333;
+    top: 16px;
+    left: 44px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.player-item-container span.chip-icon{
+    position: absolute;
+    display: inline-block;
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    left: 120px;
+    top: 16px;
+}
+
+.player-item-container span.showhand{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+.player-item-container h5.bet-amt{
+    display: inline-block;
+    position: absolute;
+    color: #2a2a2a;
+    font-size: 16px;
+    top: 7px;
+    left: 145px;
+    font-weight: 600;
+}
+
+@media (max-width: 375px){
+    .player-item-container h4{
+        font-size: 10px;
+        width: 60px;
+    }
+    
+    .player-item-container h4.player-name{
+        top: 1px;
+    }
+}
+
+@media (max-width: 414px){
+    .player-item-container span.chip-icon{
+        height: 16px;
+        width: 16px;
+        top: 18px;
+        left: 116px;
+    }
+    
+    .player-item-container h5.bet-amt{
+        font-size: 12px;
+        top: 11px;
+        left: 135px;
+    }
+    
+    @media (max-width: 375px){
+        .player-item-container span.chip-icon{
+            height: 16px;
+            width: 16px;
+            top: 18px;
+            left: 106px;
+        }
+
+        .player-item-container h5.bet-amt{
+            font-size: 12px;
+            top: 11px;
+            left: 124px;
+        }
+    }
+    
+    @media (max-width: 320px){
+        .player-item-container span.chip-icon{
+            height: 16px;
+            width: 16px;
+            top: 18px;
+            left: 100px;
+        }
+
+        .player-item-container h5.bet-amt{
+            font-size: 10px;
+            top: 12px;
+            left: 118px;
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .player-item-container h4{
+        font-size: 10px;
+        width: 60px;
+    }
+    
+    .player-item-container h4.player-name{
+        top: 1px;
+    }
+}
+
+/* BET MODAL */
+.bet-container{
+    width: 100%;
+}
+
+.bet-container .bet-header-row{
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    border-bottom: 1px solid #999;
+    margin: 0;
+}
+
+.bet-container .bet-header-row h3{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    color: #222;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.bet-container .bet-content-row{
+    text-align: center;
+}
+
+.bet-container .bet-content-row .toggle{
+    width: 100%;
+    display: table;
+    padding: 0 0 5px 0;
+    background-color: #ccc;
+}
+
+.bet-container .bet-content-row .toggle .toggle-area{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+}
+
+.bet-container .bet-content-row .toggle .toggle-label-left,
+.bet-container .bet-content-row .toggle .toggle-label-right{
+    display: table-cell;
+    width: 35%;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.bet-container .bet-content-row .topup{
+    width: 200px !important;
+    margin: auto;
+    display: block;
+}
+
+.bet-container .bet-content-row .balance{
+    width: 100%;
+    margin: auto;
+    background-color: #ccc;
+    padding: 10px 0;
+}
+
+.bet-container .bet-content-row .balance h4{
+    width: 200px;
+    background: -webkit-linear-gradient(top, #e1e1e1 0, #c6c6c6 100%) !important;
+    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+    margin: auto;
+    padding: 3px 5px !important;
+    font-size: 11px !important;
+}
+
+.bet-container .bet-content-row .balance h5{
+    width: 200px;
+    background-color: #e5e5e5 !important;
+    border-radius: 0 0 5px 5px;
+    font-weight: 600;
+    padding: 5px;
+    margin: auto;
+    font-size: 13px !important;
+}
+
+.bet-container .bet-content-row .topup h4{
+    width: 100%;
+    color: #555 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.bet-container .bet-content-row .topup p.redText{
+    color: #ca0909 !important;
+    font-size: 12px !important;
+}
+
+.bet-container .bet-content-row .topup p.redText b{
+    font-weight: 600;
+}
+
+.bet-container .bet-content-row .topup button{
+    width: 100% !important;
+    margin: 0 auto !important;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 2.2 !important;
+    border-radius: 5px !important;
+}
+
+.bet-container .bet-content-row .toggle .toggle-switch {
+    background: #e5e5e5;
+    width: 80px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+}
+
+.toggle-switch span.normal-icon{
+    display: inline-block;
+    position: absolute;
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    left: 10px;
+}
+
+.toggle-switch span.showhand-icon{
+    display: inline-block;
+    position: absolute;
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    right: 10px;
+}
+
+.toggle-switch:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 30px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    border-top: 0;
+    border-bottom: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.toggle.showhand .toggle-switch:after{ 
+  margin-left: 40px;
+}
+
+.toggle .toggle-switch span.normal-icon{
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.toggle .toggle-switch span.showhand-icon{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.toggle.showhand .toggle-switch span.normal-icon{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.toggle.showhand .toggle-switch span.showhand-icon{
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.toggle-label {
+    font-weight: 600;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.toggle .toggle-label-off{
+    color: #cf0017;
+}
+
+.toggle.showhand .toggle-label-on{
+    color: #0649a3;
+}
+
+.toggle .toggle-label-on,
+.toggle.showhand .toggle-label-off{
+    color: #222;
+}
+
+.bet-container .bet-content-row .min-max,
+.bet-container .bet-content-row .bet-amount{
+    width: 200px;
+    margin: auto;
+}
+
+.bet-container .bet-content-row .min-max{
+    display: table;
+}
+
+.bet-container .bet-content-row .min-btn,
+.bet-container .bet-content-row .max-btn{
+    display: table-cell;
+    width: 50%;
+}
+
+.bet-container .bet-content-row .min-max button.bet-min,
+.bet-container .bet-content-row .min-max button.bet-max{
+    width: 90%;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.bet-container .bet-content-row .bet-amount h4{
+    width: 100%;
+    color: #555;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 5px;
+    margin: 5px 0 0 0;
+    background: -webkit-linear-gradient(top, #e1e1e1 0, #c6c6c6 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.bet-container .bet-content-row .bet-amount .bet-amount-container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.bet-container .bet-content-row .bet-amount .bet-amount-container input{
+    border: 0;
+    font-size: 20px;
+    height: 40px;
+    margin: 0;
+    padding: 0 60px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bet-container .bet-content-row .bet-amount .bet-amount-container span.chip-icon{
+    display: inline-block;
+    position: absolute;
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    top: 7px;
+    left: 20px;
+}
+
+.bet-container .bet-content-row .bet-amount .bet-amount-container span.chip-icon.showhand{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+.bet-container .bet-content-row .bet-amount button{
+    width: 100%;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.2;
+    border-radius: 0 0 5px 5px;
+}
+
+.bet-container .bet-content-row .rebet-btn{
+    width: 200px;
+    height: 30px;
+    margin: 10px auto 5px auto;
+}
+
+.bet-container .bet-content-row .rebet-btn button{
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #cecece 0, #b4b4b4 100%);
+}
+
+.bet-container .bet-content-row .rebet-btn  h4{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.bet-container .bet-content-row .rebet-btn  span.chip-icon{
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.bet-container .bet-content-row .rebet-btn .rebet-btn-content span.chip-icon.showhand{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+/* BID BANKER MODAL */
+.bid-container{
+    width: 100%;
+}
+
+.bid-container .bid-header-row{
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    border-bottom: 1px solid #999;
+    margin: 0;
+}
+
+.bid-container .bid-header-row h3{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    height: 30px;
+    color: #222;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.bid-container .bid-content-row{
+    text-align: center;
+    padding: 10px;
+}
+
+.bid-container .bid-content-row .highest-bidder-row{
+    width: 200px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.bid-container .bid-content-row .highest-bidder-row .highest-bidder-content{
+    width: 100%;
+    height: 60px;
+    border-radius: 0 0 5px 5px;
+    background-color: #e1e1e1;
+    margin: auto;
+    position: relative;
+}
+
+.bid-container .bid-content-row .highest-bidder-row h5{
+    background: -webkit-linear-gradient(top, #e1e1e1 0, #c6c6c6 100%);
+    color: #555;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 3px 5px;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    margin: auto;
+}
+
+.bid-container .bid-content-row .highest-bidder-row .highest-bidder-content img{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    top: 5px;
+    left: 15px;
+}
+
+.bid-container .bid-content-row .highest-bidder-row .highest-bidder-content h4.hbidder-name{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 4px;
+    background: rgba(0,0,0,0.05);
+    color: #222;
+    top: -2px;
+    left: 80px;
+    border-radius: 5px 5px 0 0;
+}
+
+.bid-container .bid-content-row .highest-bidder-row .highest-bidder-content h4.hbidder-amount{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 4px;
+    background: rgba(0,0,0,0.1);
+    color: #222;
+    top: 30px;
+    left: 80px;
+    border-radius: 0 0 5px 5px;
+}
+
+.bid-container .bid-content-row .place-bid-row{
+    width: 200px;
+    margin: auto;
+}
+
+.bid-container .bid-content-row .place-bid-row h4{
+    width: 100%;
+    color: #555;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    background: -webkit-linear-gradient(top, #e1e1e1 0, #c6c6c6 100%);
+    border-radius: 5px 5px 0 0;
+}
+
+.bid-container .bid-content-row .place-bid-row input{
+    border: 0;
+    font-size: 20px;
+    height: 40px;
+    padding: 0px 20px;
+    margin: 0;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bid-container .bid-content-row .place-bid-row button{
+    width: 100%;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.2;
+    border-radius: 0 0 5px 5px;
+}
+
+.close {
+  margin-top: 0px;
+  margin-right: -20px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.popup-button {
+  margin-top: 20px;
+}
+
+/* BET SUMMARY */
+.bet-summary{
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    z-index: 122;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    transition: all .5s linear;
+    -webkit-transform: translateZ(0);
+}
+
+.bet-summary-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bet-summary-header{
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    height: 8%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    top: 0;
+    left: 0;
+}
+
+.bet-summary-header h3{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 600;  
+}
+
+.bet-summary-content{
+    max-height: 50%;
+    overflow: hidden;
+    padding-top: 10%;
+}
+
+.bet-summary-table{
+    width: 90%;
+    margin: 5px auto 15px auto;
+    text-align: left;
+}
+
+.bet-summary-table tr td{
+    padding: 2px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bet-summary-table tr td:nth-child(1){
+    width: 70%;
+    font-weight: 600;
+}
+
+.bet-summary-table tr td:nth-child(2){
+    width: 30%;
+    font-weight: 600;
+    color: #333;
+}
+
+.bet-summary-table tr td.normal-bet span{
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+.bet-summary-table tr td.showhand-bet span{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+.bet-summary-players{
+    width: 90%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.bet-summary-players ul.players-list{
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bet-summary-players ul.players-list li{
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 320px){
+    .bet-summary-players ul.players-list li{
+        width: 100%;
+        float: left;
+    }
+}
+
+.bet-summary-players ul.players-list li div.player-item{
+    display: table;
+    width: 100%;
+}
+
+.bet-summary-players ul.players-list li div.player-item div.player-item-left{
+    width: 60%;
+    display: table-cell;
+}
+
+.bet-summary-players ul.players-list li div.player-item div.player-item-right{
+    width: 40%;
+    display: table-cell;
+}
+
+.bet-summary-players ul.players-list li h4{
+    font-size: 15px;
+    margin: 3px 0;
+    text-overflow: ellipsis;
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bet-summary-players ul.players-list li h4 img.player-icon{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    margin: 0 3px;
+    height: 15px;
+    width: 15px;
+}
+
+.bet-summary-players ul.players-list li h4 span.chip-icon{
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    height: 15px;
+    width: 15px;
+}
+
+.bet-summary-players ul.players-list li h4 span.chip-icon.showhand{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+.bet-summary-buttons{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    z-index: 110;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+}
+
+.bet-summary-buttons ul.buttons-list{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bet-summary-buttons ul.buttons-list li{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.bet-summary-buttons ul.buttons-list li button{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.bet-summary-buttons ul.buttons-list li.rejectBets button{
+    background: -webkit-linear-gradient(top, #e43044 0, #cb2a3c 100%);
+    color: #ddd;
+}
+
+.bet-summary-buttons ul.buttons-list li.acceptBets button{
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);   
+}
+
+/* SHOWDOWN DIV CONTAINER */
+.showdown-div-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    z-index: 122;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.showdown-div-container .showShowdown{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showShowdown img{
+    position: absolute;
+    color: #ffcc99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+.showdown-div-container .showShowdown.zoomOutExit img{
+    -ms-transform: scale(5);
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+.showdown-div-container .showPlayerCard{
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showPlayerCard img.card{
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showPlayerCard img.profile-pic{
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -20px;
+    border-radius: 60px;
+    border: 3px solid #555;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showBankerCard{
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showBankerCard img.card{
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showBankerCard img.profile-pic{
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -30px;
+    border-radius: 60px;
+    border: 3px solid #fcbd2d;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showYouWinLose{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showYouWinLose img{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+.showdown-div-container .showYouWinLose .winningHand h4{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(top,#ffd26c 0, #fcbd2d 50%, #ffd26c 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 100%;
+    text-align: center;
+    top: 57%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+.showdown-div-container .showWinLoseAmount{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.showdown-div-container .showWinLoseAmount .winLoseAmountBox span.drinkwater-icon{
+    background: url("../images/icons/ggn-drinkwater-icon.png") no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;   
+}
+
+.showdown-div-container .showWinLoseAmount .winLoseAmountBox{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media(max-width: 375px){
+    .showdown-div-container .showWinLoseAmount .winLoseAmountBox{
+        bottom: 37%;
+    }
+
+    @media(max-width: 320px){
+        .showdown-div-container .showWinLoseAmount .winLoseAmountBox{
+            bottom: 40%;
+        }
+    }
+}
+
+.showdown-div-container .showWinLoseAmount.win .winLoseAmountBox{
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+}
+
+.showdown-div-container .showWinLoseAmount.lose .winLoseAmountBox{
+    background: -webkit-linear-gradient(top, #dd0019  0, #98070d 100%);
+    color: #ddd;
+}
+
+.showdown-div-container .showWinLoseAmount.tie .winLoseAmountBox{
+    background: -webkit-linear-gradient(top, #00cfd1  0, #00a7a9 100%);
+}
+
+.showdown-div-container .showWinLoseAmount .winLoseAmountBox h4{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.showdown-div-container .showWinLoseAmount .winLoseAmountBox:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: 42px;
+	right: auto;
+	bottom: -15px;
+	border: 8px solid;
+	border-color: #fcbd2d transparent transparent transparent;
+}
+
+/* SCORECARD */
+.scorecard{
+    position: absolute;
+    height: 60%;
+    width: 95%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    z-index: 122;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    transition: all .5s linear;
+}
+
+.scorecard-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.scorecard .scorecard-header{
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    height: 10%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #ddd;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+
+.scorecard .scorecard-header h3{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 600;  
+}
+
+.scorecard div.scorecard-players-container{
+    position: relative;
+    height: 95%;
+    overflow: scroll;
+    z-index: 109;
+    background-color: #ddd;
+}
+
+.scorecard div.scorecard-swipe-info{
+    display: table;
+    width: 100%;
+    height: 15px;
+    padding-top: 12%;
+    border-bottom: 2px solid #555;
+    background-color: #aaa;
+}
+
+.scorecard div.scorecard-swipe-info .scorecard-swipe-info-left{
+    display: table-cell;
+    width: 40%;
+    height: 15px;
+    background-color: #aaa;
+}
+
+.scorecard div.scorecard-swipe-info .scorecard-swipe-info-right{
+    display: table-cell;
+    width: 60%;
+    height: 15px;
+    background-color: #aaa;
+    text-align: center;
+}
+
+.scorecard div.scorecard-swipe-info .scorecard-swipe-info-right h4{
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+    color: #ddd;
+}
+
+.scorecard div.scorecard-swipe-info .scorecard-swipe-info-right h4 span.arrow-left{
+    background: url("../images/ggn-left-arrow-long.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 10px;
+    width: 18px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.scorecard div.scorecard-swipe-info .scorecard-swipe-info-right h4 span.arrow-right{
+    background: url("../images/ggn-right-arrow-long.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 10px;
+    width: 18px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.scorecard div.scorecard-players{
+    padding-bottom: 4%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+table.scorecard-table {
+    border-collapse: collapse;
+    margin-left: 32%;
+    min-width: 68%;
+    background-color: #ddd;
+}
+
+table.scorecard-table tr{
+    border-bottom: 1px solid #aaa;
+}
+
+table.scorecard-table tr td:nth-of-type(2){
+    background-color: #d5d5d5;
+}
+
+table.scorecard-table tr td:nth-of-type(4){
+    background-color: #919191;
+}
+
+table.scorecard-table tr.banker-row th.headcol{
+    background-color: #ffcc00;
+}
+
+table.scorecard-table tr.my-row th.headcol{
+    background-color: #73e5c9;
+}
+
+table.scorecard-table .headcol {
+    position: absolute; 
+    width: 32%;
+    left: 0;
+    top: auto;
+    border-right: 2px solid #555;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid #aaa;
+}
+
+table.scorecard-table .headcol h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media(max-width: 320px){
+    table.scorecard-table .headcol h4{
+        font-size: 13px;
+    }
+}
+
+table.scorecard-table .headcol img.player-icon{
+    height: 28px;
+    width: 28px;
+    vertical-align: middle;
+    border-radius: 28px;
+    margin: 0 6px 0 0;
+}
+
+table.scorecard-table th {
+    margin: 0;
+    border-top-width: 0px; 
+    white-space: nowrap;
+    padding: 6px;
+    background-color: #dfdfdf;
+}
+
+table.scorecard-table td {
+    margin: 0;
+    border-top-width: 0px; 
+    white-space: nowrap;
+    padding: 6px;
+}
+
+table.scorecard-table td h4.player-score{
+    color: #ffcc00;
+    font-weight: 600;
+}
+
+table.scorecard-table td h4.player-score span.drinkwater-icon{
+    background: url("../images/icons/ggn-drinkwater-icon.png") no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+table.scorecard-table td h4.player-score.tie{
+    color: #fff;
+}
+
+table.scorecard-table td h4.player-score.negative{
+    color: #fff;
+    font-weight: 600;
+}
+
+table.scorecard-table td img.player-card{
+    height: 28px;
+    vertical-align: middle;
+}
+
+table.scorecard-table td h4{
+    font-size: 14px;
+    margin: 0;
+}
+
+@media(max-width: 320px){
+    table.scorecard-table td h4{
+        font-size: 14px;
+    }
+}
+
+table.scorecard-table td h4 span.chip-icon{
+    background: url("../images/icons/ggn-red-chip.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px 0 0;
+    height: 16px;
+    width: 16px;
+}
+
+table.scorecard-table td h4 span.chip-icon.showhand{
+    background: url("../images/icons/ggn-blue-chip.png") no-repeat;
+    background-size: contain;
+}
+
+.scorecard .scorecard-buttons{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    z-index: 111;
+}
+
+.scorecard .scorecard-buttons ul.buttons-list{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.scorecard .scorecard-buttons ul.buttons-list li{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.scorecard .scorecard-buttons ul.buttons-list li button{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    font-size: 14px;
+    background: -webkit-linear-gradient(top, #ffd26c 0, #fcbd2d 100%);   
+}
+
+/* SHOWDOWN */
+.showdown-div-container .showWinLoseAmount.win .winLoseAmountBox:after{
+    border-color: #fcbd2d transparent transparent transparent;
+}
+
+.showdown-div-container .showWinLoseAmount.lose .winLoseAmountBox:after{
+    border-color: #98070d transparent transparent transparent;
+}
+
+.showdown-div-container .showYouWinLose.win img.showWin{
+    display: block;
+}
+
+.showdown-div-container .showYouWinLose.win img.showLose{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.win img.showTie{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.lose img.showWin{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.lose img.showLose{
+    display: block;
+}
+
+.showdown-div-container .showYouWinLose.lose img.showTie{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.tie img.showWin{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.tie img.showLose{
+    display: none;
+}
+
+.showdown-div-container .showYouWinLose.tie img.showTie{
+    display: block;
+}
+
+/* BANKER BID SUCCESS */
+.banker-bid-popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 122;
+    left: 0;
+    top: 0;
+}
+
+.banker-bid-popup .banker-bid-popup-content{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 1s ease-out;
+}
+
+.banker-bid-popup .banker-bid-popup-content img{
+    position: relative;
+    width: 100%;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+.banker-bid-popup .banker-bid-popup-content img.profile-pic{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border-radius: 120px;
+    margin-bottom: 10px;
+}
+
+.banker-bid-popup .banker-bid-popup-content h3{
+    width: 180px;
+    position: relative;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 0;
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+.banker-bid-popup .banker-bid-popup-content h3.banker-name{
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.banker-bid-popup .banker-bid-popup-content h3.banker-stack{
+    font-size: 20px;
+    color: #ddd;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.banker-bid-popup .banker-bid-popup-content h3.banker-rounds{
+    border-radius: 0 0 10px 10px;
+    font-size: 20px;
+    color: #ddd;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* PLACE YOUR BETS */
+.place-your-bets-popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: inline-block;
+    z-index: 111;
+    left: 0;
+    top: 0;
+}
+
+.place-your-bets-popup img{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+/* ENLARGE SCREEN */
+.enlarge-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 112;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.enlarge-screen img{
+    position: absolute;
+    width: 72px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -moz-transition:all 1s linear;
+    -webkit-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+
+/* GGNiu Banker Badge */
+img.banker-badge-img{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    height: 70px;
+    width: 70px;
+    z-index: 121;
+}
+    
+    
+    

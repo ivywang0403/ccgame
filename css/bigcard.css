@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+.card {
+  position: relative;
+  max-width: 100%;
+  background: url(../images/pokercards-4c-small.png) no-repeat;
+  background-size: 100%;
+}
+
+/* SPADE */
+.cd2 { background-position: 0 72.222222%; }
+.cd3 { background-position: 0 74.074074%; }
+.cd4 { background-position: 0 75.925926%; }
+.cd5 { background-position: 0 77.777778%; }
+.cd6 { background-position: 0 79.62963%; }
+.cd7 { background-position: 0 81.481481%; }
+.cd8 { background-position: 0 83.333333%; }
+.cd9 { background-position: 0 85.185185%; }
+.cd10 { background-position: 0 87.037037%; }
+.cd11 { background-position: 0 88.888889%; }
+.cd12 { background-position: 0 90.740741%; }
+.cd13 { background-position: 0 92.592593%; }
+.cd1 { background-position: 0 94.444444%; }
+
+/* CLUB */
+.cd202 { background-position: 0 24.074074%; }
+.cd203 { background-position: 0 25.925926%; }
+.cd204 { background-position: 0 27.777778%; }
+.cd205 { background-position: 0 29.62963%; }
+.cd206 { background-position: 0 31.481481%; }
+.cd207 { background-position: 0 33.333333%; }
+.cd208 { background-position: 0 35.185185%; }
+.cd209 { background-position: 0 37.037037%; }
+.cd210 { background-position: 0 38.888889%; }
+.cd211 { background-position: 0 40.740741%; }
+.cd212 { background-position: 0 42.592593%; }
+.cd213 { background-position: 0 44.444444%; }
+.cd201 { background-position: 0 46.296296%; }
+
+/* DIAMOND */
+.cd302 { background-position: 0 0%; }
+.cd303 { background-position: 0 1.851852%; }
+.cd304 { background-position: 0 3.703704%; }
+.cd305 { background-position: 0 5.555556%; }
+.cd306 { background-position: 0 7.407407%; }
+.cd307 { background-position: 0 9.259259%; }
+.cd308 { background-position: 0 11.111111%; }
+.cd309 { background-position: 0 12.962963%; }
+.cd310 { background-position: 0 14.814815%; }
+.cd311 { background-position: 0 16.666667%; }
+.cd312 { background-position: 0 18.518519%; }
+.cd313 { background-position: 0 20.37037%; }
+.cd301 { background-position: 0 22.222222%; }
+
+/* HEARTS */
+.cd102 { background-position: 0 48.148148%; }
+.cd103 { background-position: 0 50%; }
+.cd104 { background-position: 0 51.851852%; }
+.cd105 { background-position: 0 53.703704%; }
+.cd106 { background-position: 0 55.555556%; }
+.cd107 { background-position: 0 57.407407%; }
+.cd108 { background-position: 0 59.259259%; }
+.cd109 { background-position: 0 61.111111%; }
+.cd110 { background-position: 0 62.962963%; }
+.cd111 { background-position: 0 64.814815%; }
+.cd112 { background-position: 0 66.666667%; }
+.cd113 { background-position: 0 68.518519%; }
+.cd101 { background-position: 0 70.37037%; }
+
+.cd401 { background-position: 0 96.296296%; }
+.cd402 { background-position: 0 98.148148%; }
+.cd403 { background-position: 0 100%; }
+
+.darkCard{opacity:.5}
